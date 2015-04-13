@@ -1,0 +1,117 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[outdir=./]{epstopdf}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Created with {\fontfamily{cmr}\selectfont \LaTeX}}
+
+\begin{document}
+\header{Justin}{Shuman}
+      {Operations Manager}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Address}
+    1810 E Palm Ave \#1109
+    Tampa, FL 33605
+    ~
+  \section{Contact}
+    +1 813-857-4464
+    \includegraphics[scale=0.5]{img/skype}: shumanjustin
+    ~
+  \section{Mail}
+    \href{mailto:shumanjustin@gmail.com}{\textbf{shumanjustin@}\\gmail.com}
+    ~
+  \section{Web \& Git}
+    \includegraphics[scale=0.25]{img/linkedin}: \href{http://linkedin.com/in/shumanjustin}{shumanjustin}
+    \includegraphics[scale=.055]{img/GitHub_Logo}: \href{https://github.com/shumanji}{shumanji}
+    ~
+  %\section{Tech Skills}
+  %  ~
+  %  \includegraphics[scale=0.35]{img/techskills}
+  %  ~
+  %\section{Personal Skills}
+  %  ~
+  %  \includegraphics[scale=0.2]{img/personalskills}
+  %  ~
+\end{aside}
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {2011 - Now}
+    {Operations Manager}
+    {Bay Management Partners, Tampa, FL}
+    {Oversee daily work flow and allocate labor from a 20-strong e-commerce department selling on Amazon.com.  Identify and explore opportunities for process improvement and cost reduction.\\
+    \textbf{Major Accomplishments}
+    \begin{itemize}
+    \item Automated and linked several Access and Excel based reporting systems using VBA, saving no less than sixteen hours of labor per week.
+    \item Developed and implemented optimization models to determine the most profitable product mix given on-hand inventory.
+    \item Authored and implemented the company's first ever best practices manual and employee training program.
+    \item Created data-driven reporting using R and Excel to measure the company's performance as an Amazon seller, identify recurring issues, and implement fixes.
+    \end{itemize}
+    }
+  \entry
+    {2007 - 2013}
+    {Non-Commissioned Officer}
+    {Florida National Guard, Orlando, FL}
+    {Lead, train, and develop infantry fire teams.  Calculate firing data for indirect fire using handheld ballistic computers.  Track and report battlefield developments using Linux based Blue Force Tracker software.\\
+    \textbf{Major Accomplishments}
+    \begin{itemize}
+    \item Awarded coveted battlefield promotion from corporal to sergeant for extraordinary performance of duties during combat operations.
+    \item Received letter of commendation from Tampa mayor Bob Buckhorn for providing security during the 2012 RNC.
+    \end{itemize}
+    }
+  \entry
+    {2005 - 2009}
+    {Vendor Specialist}
+    {Sweetbay Supermarkets, Tampa, FL}
+    {Maintained accurate records of vendor deliveries, reconciled invoices, placed orders, and inspected vendor displays\\}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2013 - 2014}
+    {Bachelor's Degree in Mathematics}
+    {University of Southern New Hampshire, NH}
+    {Main subjects: Differential equations, optimization, analysis, Java programming}
+  \entry
+    {2002 - 2004}
+    {Associate's Degree in Engineering}
+    {Hillsborough Community College, FL}
+    {Main subjects: Calculus, C programming}
+\end{entrylist}
+
+\section{Certifications}
+\begin{entrylist}
+  \entry
+    {In-Progress}
+    {Data Science}
+    {Coursera, e-learning}
+    {Ten-course, non-credit certificate in data analysis using R.  Delivered and verified by Johns Hopkins University Bloomberg School of Public Health.}
+\end{entrylist}
+
+\end{document}
