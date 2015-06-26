@@ -1,0 +1,106 @@
+\documentclass[paper=letter]{scrlttr2}
+
+\makeatletter
+\@setplength{refvpos}{\useplength{toaddrvpos}}
+\makeatother
+
+\enlargethispage{3\baselineskip}
+
+\usepackage{fontspec} % Allows font customization
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage[dutch,english]{babel} % Required to compile in Windows
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont {texgyreheros-regular.otf} % Main document font
+\setsansfont {Lato-Light.ttf} % Used in the from address line above the to address
+
+\renewcommand{\normalsize}{\fontsize{12}{17}\selectfont} % Sets the font size and leading
+%----------------------------------------------------------------------------------------
+%  PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\setkomavar{fromname}{Justin Shuman} % Your name
+\setkomavar{fromaddress}{1810 E Palm Ave \#1109} % Your address
+\setkomavar{fromphone}{+1 (813) 857-4464} % Your phone number
+\setkomavar{fromemail}{shumanjustin@gmail.com} % Your email address
+\setkomavar{place}{} % City written before the date, put your city here if you want this
+\setkomavar{signature}{Justin Shuman} % Your name as you want it to appear in the signature
+\setkomavar{date}{June 25, 2015} % Moet je neerzetten anders is de datum in het Engels.
+
+% These are not used in this document, uncomment if you would like to use them and refer to them as \usekomavar{name}
+%\setkomavar{fromfax}{+1 (1)23 456789} % Your fax number
+%\setkomavar{fromurl}{http://www.johnsmith.com} % Your personal website
+%\setkomavar{frombank}{Postbank 9307157}
+
+%----------------------------------------------------------------------------------------
+%  HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+\setkomavar{firsthead}{%
+\centering
+\\[7mm]{\addfontfeature{LetterSpace=20.0}\fontsize{0.1}{0.1}\selectfont\scshape .}\\[5mm]
+\fontsize{21}{21}\selectfont\scshape }% Your current job title
+
+%----------------------------------------------------------------------------------------
+%  FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\setkomavar{firstfoot}{%
+\centering
+\addfontfeature{LetterSpace=10.0}\scshape{\renewcommand{\\}{\ {\large\textperiodcentered}\ }
+\usekomavar{fromaddress}
+}\\
+{\Large\Letter} \usekomavar{fromemail} \ {\Large\Mobilefone} \usekomavar{fromphone}% If you want your fax number or website URL showing, add it here; you may need to play around with spacing
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% COVER LETTER CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+\begin{letter}{ % Address of the company you are applying to
+HR Dept. -- Apple\\
+T.a.v. Hendrik Laser\\
+Laserlane 200\\
+1095 KX Amsterdam\\
+~\\
+RE: jearb
+}
+
+\setkomavar{subject}{ } % This is the bold text saying 'Cover Letter', remove it if you don't like it
+
+\opening{ }
+
+ \addvspace{3cm} % Met de afstand kan je een beetje sleutelen tot ie naar je zin in het midden is.
+
+Dear Recruiter,\\ % Zorg dat je hem aan de juiste persoon richt uiteraard (als je het niet weet bel je op).
+
+PARAGRAPH ONE: State the reason for the letter, name the position or type of work you
+are applying for and identify the source from which you learned of the opening.\\
+
+PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products,
+services - above all, stress what you can do for the employer. If you are a recent graduate,
+explain how your academic background makes you a qualified candidate for the position. If
+you have practical work experience, point out specific achievements or unique qualifications.
+Try not to repeat the same information the reader will find in the resume. The purpose of this
+section is to strengthen your resume by providing details which bring your experiences to life.\\
+
+PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the
+time and place. Repeat your phone number in the letter. End the letter by thanking the employer
+for taking the time to consider your credentials.\\
+
+Sincerely yours,\\
+~\\\\
+\usekomavar{signature}\\
+
+\emph{Attachments: }
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+\end{document}
